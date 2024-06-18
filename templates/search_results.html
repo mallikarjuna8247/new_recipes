@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<center>
+<body>
+<h1>Search Results</h1>
+<ul>{% if recipes %}
+        {% for result in recipes %}
+            <li>{{ result }}</li>
+        {% endfor %}
+    {% else %}
+            <li>No results found.</li>
+    {% endif %}
+</ul>
+<a href="/dashboard">Back to Search</a>
+
+</body>
+</center>
+</html>

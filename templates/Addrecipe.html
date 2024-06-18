@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Recipe</title>
+  <style>
+    .block {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #04AA6D;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body style="background-color: lightblue;">
+<center>
+  <h1>Add Recipe</h1>
+  <table>
+  <form method="POST" action="/addrecipe">
+    <tr>
+      <th><label for="Title">Title:</label></th>
+      <td><input type="text" id="title" name="Title" required></td>
+    </tr>
+  <tr>
+    <th><label for="recipe_description">Description:</label></th>
+    <td><textarea id="recipe_description" name="Description" required></textarea></td>
+  </tr>
+    <tr>
+      <th><label for="Ingredients">Ingredients:</label></th>
+      <td><input type="text" id="Ingredients" name="Ingredients" cols="50" rows="10" required></td>
+    </tr>
+    <tr>
+      <th><label for="Instructions">Instructions:</label></th>
+    <td><input type="text" id="Instructions" name="Instructions" required></td>
+    </tr>
+    <tr>
+        <td><button type="submit" class="block">Add Recipe</button></td>
+        <td><a href="{{ url_for('dashboard') }}" class="block">Cancel</a></td>
+    </tr>
+    </form>
+  </table>
+  </center>
+
+</body>
+</html>

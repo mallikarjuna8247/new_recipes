@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <style>
+  .block {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #04AA6D;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<center>
+<body style="background-color: lightblue;">
+  <h1>Registration Form</h1>
+  <table>
+  <form method="POST" action="/register">
+    <tr>
+    <th><label for="username">Username:</label></th>
+    <td><input type="text" id="username" name="username" required></td>
+    </tr>
+    <tr>
+    <th><label for="password">Password:</label></th>
+    <td><input type="password" id="password" name="password" required></td>
+    </tr>
+    <tr>
+    <th><label for="Email">Email:</label></th>
+    <td><input type="text" id="Email" name="Email" required></td>
+    </tr>
+    <tr>
+    <th><label for="Age">Age:</label></th>
+    <td><input type="text" id="Age" name="Age" required></td>
+    </tr>
+    <tr>
+    <td><button type="submit" class="block">Register</button></td>
+    <td><button type="submit" class="block">Cancel</button></td>
+    </tr>
+  </form>
+  </table>
+</body>
+</center>
+</html>
